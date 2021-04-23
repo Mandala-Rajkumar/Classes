@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Understanding TypeScript</title>
+  <!-- <script src="dist/app.js" defer></script> -->
+</head>
+
+<body>
+  <!-- <p> Hello </p>
+  <input type="text" id="user-input" value="Hello"> -->
+  <script>
+    const jhon = {
+      name: 'Rajkumar',
+      balance: 2000,
+      deduct(amount) {
+        // console.log(this.balance)
+        return new Promise((reslove, reject) => {
+          setTimeout(() => {
+            this.balance = this.balance - amount;
+            reslove(`${this.name} has an amount of ${this.balance}`)
+          }, 2000)
+        })
+      }
+    }
+
+    // jhon.deduct(1500).then(message => console.log(message))
+
+    // const a = 12;
+
+    // var result;
+    // function add(a, b) {
+    //   if(a) {
+    //   let Oldd = 'hello';
+    //   console.log('Old ' + Oldd)
+    // }
+    // // console.log('Old ' + Oldd)
+    // // console.log('Old ' + Oldd)
+    //   // var result;
+    //   result = a + b;
+    // }
+    // add(7,8);
+    // console.log(result)
+    // // console.log(b)
+
+
+  </script>
+</body>
+
+</html>
